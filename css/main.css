@@ -422,6 +422,10 @@ a {
 }
 
 .request__link-box {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin-inline: auto;
   background-color: hsl(0, 0%, 100%);
   border-radius: 25px;
 }
@@ -461,6 +465,10 @@ footer .request__link:focus-visible {
     display: block;
     margin-block-start: 1.125em;
     margin-block-end: 1.125em;
+  }
+  .request__link-box {
+    margin-inline: 0;
+    margin-left: auto;
   }
 }
 .hero {
