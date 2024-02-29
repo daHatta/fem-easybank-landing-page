@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+
+
+.header__box {
+    position: relative;
+    display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+    justify-items: start;
+    padding: 1.063em 0 1em;
+    z-index: 11;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: $mq-desktop) {
+    
+    .header__box {
+        padding: 0;
+    }
+
+}

@@ -1,0 +1,8 @@
+@use "../abstract" as *;
+
+.public-sans-fem009 {
+    font-family: $ff-primary;
+    font-optical-sizing: auto;
+    font-weight: $fw-400;
+    font-style: normal;
+}

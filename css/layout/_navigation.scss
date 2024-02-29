@@ -1,0 +1,126 @@
+@use "../abstract/" as *;
+
+.primary-header {
+    z-index: 10;
+}
+
+.primary-header[data-overlay]::before {
+    content: "";
+    background: linear-gradient(to bottom, $clr-dark-blue, transparent);
+    inset: 0;
+    position: fixed;
+    margin-block-start: 3.375em;
+    z-index: 9;
+}
+
+.primary-navigation {
+    display: none;
+}
+
+.primary-navigation[data-visible] {
+    display: block;
+    margin-block-start: 3em;
+    background: $clr-white;
+    border-radius: 4px;
+    margin-inline: auto;
+    padding-block: 1.5em 1.5em;
+    position: fixed;
+    width: 327px;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav__link {
+    color: $clr-dark-blue;
+}
+
+.mobile__nav-toggle {
+    display: flex;
+    position: sticky;
+    cursor: pointer;
+    background: transparent;
+    width: 24px;
+    height: 24px;
+    border: 0;
+}
+
+.mobile__nav-toggle[aria-expanded="false"] {
+    background-image: url("../../images/icon-hamburger.svg");
+    background-size: 24px 11px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.mobile__nav-toggle[aria-expanded="true"] {
+    background-image: url("../../images/icon-close.svg");
+    background-size: 18px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+@media screen and (min-width: $mq-desktop) {
+
+    .mobile__nav-toggle {
+        display: none;
+    }
+
+    .primary-navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    
+    .nav__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+    }
+    
+    .nav__link {
+        color: $clr-grayish-blue;
+        font-size: $fs-300;
+    }
+    
+    .nav__link:has(span:hover) {
+        position: relative;
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        
+    }
+    
+    .nav__link:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background: linear-gradient(to right, $clr-link-btn);
+    }
+    
+    .nav__link span:hover {
+        color: $clr-dark-blue;
+    }
+
+}
+

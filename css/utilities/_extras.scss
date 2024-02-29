@@ -1,0 +1,21 @@
+@use "../abstract/" as *;
+
+.visually-hidden {
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.hidden {
+    display: none;
+}
+
+.profile_bg {
+    background-color: $clr-light-grayish-blue;
+    box-shadow: 0 0 0 100vmax $clr-light-grayish-blue;
+    clip-path: inset(0 -100vmax);
+}

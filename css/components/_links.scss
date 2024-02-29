@@ -1,0 +1,46 @@
+@use "../abstract/" as *;
+
+.request__link-box {
+    background-color: $clr-white;
+    border-radius: 25px;
+}
+
+.request__link {
+    display: inline-block;
+    color: $clr-white;
+    background: linear-gradient(to right, $clr-link-btn);
+    font-size: .875rem;
+    font-weight: $fw-700;
+    padding-block: .813em;
+    padding-inline: 2.375em;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+.request__link:hover,
+.request__link:focus-visible {
+    opacity: .6;
+}
+
+.header__box .request__link {
+    display: none;
+}
+
+.hero .request__link {
+    margin-block-start: 2.375em;
+}
+
+footer .request__link:hover,
+footer .request__link:focus-visible {
+    opacity: .6;
+}
+
+@media screen and (min-width: $mq-desktop) {
+    
+    .header__box .request__link {
+        display: block;
+        margin-block-start: 1.125em;
+        margin-block-end: 1.125em;
+    }
+
+}

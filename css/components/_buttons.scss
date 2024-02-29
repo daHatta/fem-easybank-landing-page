@@ -1,0 +1,12 @@
+@use "../abstract/" as *;
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: $clr-white;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+

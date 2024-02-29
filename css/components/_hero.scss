@@ -1,0 +1,68 @@
+@use "../abstract/" as *;
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25em;
+    padding-block-end: 2.5em;
+    z-index: 3;
+}
+
+.hero__image-box {
+    margin-block-start: -122px;
+    position: relative;
+}
+
+.hero__image-stretch {
+    margin-inline-start: -9px;
+    margin-inline-end: -9px;
+}
+
+.hero__image {
+    object-fit: cover;
+}
+
+.hero__content {
+    position: relative;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: $fs-900;
+    line-height: 1.2;
+}
+
+.hero__text {
+    margin-block-start: .75em;
+    font-size: $fs-350;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: $mq-desktop) {
+    
+    .hero {
+        flex-direction: row-reverse;
+    }
+
+    .hero__image-box {
+        margin-block-start: -94px;
+        margin-inline-end: -202px;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 400px;
+        margin-inline-end: 23em;
+    }
+
+    .hero__title,
+    .hero__text {
+        text-align: left;
+    }
+
+}

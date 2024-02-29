@@ -1,0 +1,33 @@
+@use "../abstract/" as *;
+
+.section {
+    margin-block-start: 2em;
+    padding-block-start: 3.5em;
+    padding-block-end: 4.875em;
+}
+
+.section__title {
+    font-size: $fs-800;
+    font-weight: $fw-300;
+}
+
+.section__title,
+.section__intro {
+    text-align: center;
+}
+
+.section__intro {
+    margin-block-start: 1.375em;
+    font-size: $fs-350;
+    line-height: 1.6;
+}
+
+
+@media screen and (min-width: $mq-desktop) {
+
+    .section__title,
+    .section__intro {
+        text-align: left;
+    }
+
+}

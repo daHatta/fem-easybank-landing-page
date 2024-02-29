@@ -1,0 +1,12 @@
+@use "../abstract/" as *;
+
+.container {
+    margin-inline: auto;
+    width: 327px;
+}
+
+@media screen and (min-width: $mq-desktop) {
+    .container {
+        width: 1110px;
+    }
+}

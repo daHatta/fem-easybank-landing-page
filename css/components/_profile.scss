@@ -1,0 +1,51 @@
+@use "../abstract/" as *;
+
+.pro-arg__box {
+    margin-block-start: 3.125em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.pro-arg__image {
+    margin-inline: auto;
+}
+
+.pro-arg__content-box {
+    padding-block-start: 1.625em;
+}
+
+.pro-arg__text {
+    font-size: $fs-350;
+    margin-block-start: 1.125em;
+    line-height: 1.7;
+}
+
+
+@media screen and (min-width: $mq-desktop) {
+
+    .profile {
+        z-index: 2;
+    }
+
+    .pro-arg__box {
+        display: grid;
+        grid-template-columns: repeat(4, 255px);
+        gap: 0 1.625em;
+    }
+
+    .pro-arg__image {
+        margin-inline: 0 auto;
+    }
+
+    .pro-arg__title {
+        margin-block-start: 1em;
+    }
+
+    .pro-arg__title,
+    .pro-arg__text {
+        text-align: left;
+    }
+}

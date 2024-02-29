@@ -1,0 +1,48 @@
+
+// # Front-end Style Guide
+
+// ## Layout
+
+$mq-mobile: 375px;
+$mq-desktop: 1440px;
+
+// ## Colors
+
+// ### Primary
+
+$clr-dark-blue: hsl(233, 26%, 24%);
+$clr-lime-green: hsl(136, 65%, 51%);
+$clr-bright-cyan: hsl(192, 70%, 51%);
+
+$clr-link-btn: hsl(136, 65%, 51%), hsl(192, 70%, 51%);
+
+// ### Neutral
+
+$clr-grayish-blue: hsl(233, 8%, 62%);
+$clr-light-grayish-blue: hsl(220, 16%, 96%);
+$clr-very-light-gray: hsl(0, 0%, 98%);
+$clr-white: hsl(0, 0%, 100%);
+
+// ## Typography
+
+// ### Body Copy
+
+$fs-100: .625rem;   /* 10px */
+$fs-200: .75rem;    /* 12px */
+$fs-250: .813rem;   /* 13px */
+$fs-300: .875rem;   /* 14px */
+$fs-350: .938rem;   /* 15px */
+$fs-400: 1rem;      /* 16px */
+$fs-500: 1.125rem;  /* 18px */
+$fs-600: 1.25rem;   /* 20px */
+$fs-700: 1.5rem;    /* 24px */
+$fs-800: 2rem;      /* 32px */
+$fs-900: 2.5rem;    /* 40px */
+
+// ### Font
+
+$ff-primary: "Public Sans", sans-serif;
+
+$fw-300: 300;
+$fw-400: 400;
+$fw-700: 700;

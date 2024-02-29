@@ -1,0 +1,55 @@
+@use "../abstract/" as *;
+
+body {
+    background-image: 
+    url("../../images/bg-intro-mobile.svg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top 8px center;
+    background-size: auto;
+    font-size: $fs-500;
+    background-color: $clr-very-light-gray;
+}
+
+header {
+    position: relative;
+    background: $clr-white;
+}
+
+footer {
+    background-color: $clr-dark-blue;
+    padding-block-start: 2.25em;
+    padding-block-end: 2em;
+}
+
+section {
+    display: flow-root;
+    padding-block-end: 3em;
+}
+
+h1, h2, h3 {
+    margin-block-start: 0;
+    color: $clr-dark-blue;
+    font-weight: $fw-300;
+    text-align: center;
+}
+
+p {
+    color: $clr-grayish-blue;
+    text-align: center;
+    font-size: $fs-400;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: $mq-desktop) {
+
+    body {
+        background-image: 
+        url("../../images/bg-intro-desktop.svg");
+        background-position: top -200px right -440px;
+        background-size: auto;
+    }
+}
