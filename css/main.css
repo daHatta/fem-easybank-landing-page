@@ -210,11 +210,11 @@ a {
   z-index: 9;
 }
 
-#header-primary-navigation {
+#eb-header-navi-primary {
   display: none;
 }
 
-#header-primary-navigation[data-visible] {
+#eb-header-navi-primary[data-visible] {
   background: hsl(0, 0%, 100%);
   border-radius: 4px;
   display: block;
@@ -267,7 +267,7 @@ a {
 }
 
 @media screen and (min-width: 960px) {
-  #header-primary-navigation[data-visible] {
+  #eb-header-navi-primary[data-visible] {
     background: hsl(0, 0%, 100%);
     border-radius: 4px;
     display: block;
@@ -285,7 +285,7 @@ a {
   .mobile__nav-toggle {
     display: none;
   }
-  #header-primary-navigation {
+  #eb-header-navi-primary {
     display: flex;
     justify-content: center;
   }
