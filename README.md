@@ -85,6 +85,7 @@ I will definitely add some other challenges of these type.
 - [How to style the parent element when hovering a child element?](https://stackoverflow.com/questions/8114657/how-to-style-the-parent-element-when-hovering-a-child-element) - Stumbled about the pointer-events CSS property via **stack-overflow**.
 - [has selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) - Great documentation by **Modzilla**.
 - [Absolute Centering in CSS](https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e) - Nice article by **Manisha Basra**.
+- [Multiple Navigation Landmarks](https://www.aditus.io/patterns/multiple-navigation-landmarks/) - How to deal with navigation landmarks by **Aditus**.
 - [Google Fonts](https://fonts.google.com/specimen/Public+Sans) - Font _Public Sans_ used in this project.
 
 ## Author
