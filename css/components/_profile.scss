@@ -1,12 +1,13 @@
 @use "../abstract/" as *;
 
+
 .pro-arg__box {
-    margin-block-start: 3.125em;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2em;
+    justify-content: center;
+    margin-block-start: 3.125em;
 }
 
 .pro-arg__image {
@@ -19,28 +20,28 @@
 
 .pro-arg__text {
     font-size: $fs-350;
-    margin-block-start: 1.125em;
     line-height: 1.7;
+    margin-block-start: 1.125em;
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $mq-stage-01) {
 
     .pro-arg__box {
         display: grid;
-        grid-template-columns: 500px;
         gap: 3em;
+        grid-template-columns: 500px;
     }
     
 }
 
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: $mq-stage-02) {
 
     .pro-arg__box {
         display: grid;
-        grid-template-columns: repeat(2, 372px);
         gap: 3em;
+        grid-template-columns: repeat(2, 372px);
     }
     
 }
@@ -54,8 +55,8 @@
 
     .pro-arg__box {
         display: grid;
-        grid-template-columns: repeat(4, 255px);
         gap: 0 1.625em;
+        grid-template-columns: repeat(4, 255px);
     }
 
     .pro-arg__image {

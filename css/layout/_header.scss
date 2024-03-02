@@ -1,28 +1,28 @@
 @use "../abstract/" as *;
 
+
 .primary-header {
     position: fixed;
-    z-index: 10;
     width: 100%;
+    z-index: 10;
 }
 
 .header__box {
-    position: relative;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     justify-items: start;
     padding: 1.063em 0 1em;
+    position: relative;
+    width: 100%;
     z-index: 11;
 }
 
 .header__logo {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 
 
 @media screen and (min-width: 1280px) {

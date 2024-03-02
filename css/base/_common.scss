@@ -1,24 +1,23 @@
 @use "../abstract/" as *;
 
 body {
-    font-size: $fs-500;
     background-color: $clr-very-light-gray;
+    font-size: $fs-500;
 }
 
 header {
-    position: relative;
     background: $clr-white;
+    position: relative;
 }
 
 footer {
     background-color: $clr-dark-blue;
-    padding-block-start: 2.25em;
     padding-block-end: 2em;
+    padding-block-start: 2.25em;
 }
 
 main {
     position: relative;
-    z-index: 1;
 }
 
 section {
@@ -27,16 +26,16 @@ section {
 }
 
 h1, h2, h3 {
-    margin-block-start: 0;
     color: $clr-dark-blue;
     font-weight: $fw-300;
+    margin-block-start: 0;
     text-align: center;
 }
 
 p {
     color: $clr-grayish-blue;
-    text-align: center;
     font-size: $fs-400;
+    text-align: center;
 }
 
 a {

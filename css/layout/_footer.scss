@@ -1,9 +1,10 @@
 @use "../abstract/" as *;
 
+
 .footer__box {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 2em;
+    grid-template-columns: 1fr;
     place-items: center;
 }
 
@@ -21,17 +22,17 @@
 }
 
 .footer-nav__list {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: $fs-300;
-    font-weight: $fw-300;
-    line-height: 1.4;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-size: $fs-300;
+    font-weight: $fw-300;
     gap: 1em;
+    justify-content: center;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .footer-nav__link {
@@ -44,25 +45,25 @@
 }
 
 .footer__copyright {
-    margin-block-start: 1.875em;
     font-size: $fs-300;
+    margin-block-start: 1.875em;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $mq-stage-03) {
     
     .footer__box {
         display: grid;
+        gap: 2em;
         grid-template-columns: 255px 1fr 255px;
         grid-template-rows: 95px;
-        gap: 2em;
     }
 
     .footer__area {
+        align-content: start;
+        align-items: start;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-content: start;
-        align-items: start;
     }
     
     .footer__area:nth-child(1) {
@@ -79,15 +80,15 @@
     }
 
     .footer-nav__list {
-        margin: 0;
-        display: inline-block;
         columns: 2;
+        display: inline-block;
+        margin: 0;
     }
 
     .footer-nav__item {
-        width: 190px;
-        text-align: left;
         margin-block-end: .5em;
+        text-align: left;
+        width: 190px;
     }
 
 }

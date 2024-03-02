@@ -1,12 +1,13 @@
 @use "../abstract/" as *;
 
+
 .social-media__list {
-    padding: 0;
-    margin-block-start: 1.75em;
-    margin-block-end: 0;
     display: flex;
     flex-direction: row;
     gap: .875em;
+    margin-block-start: 1.75em;
+    margin-block-end: 0;
+    padding: 0;
 }
 
 .social-media__item {
@@ -14,8 +15,8 @@
 }
 
 .social-media__link {
-    width: 24px;
     height: 24px;
+    width: 24px;
 }
 
 .social-media__link:hover svg path {

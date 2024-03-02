@@ -1,11 +1,12 @@
 @use "../abstract/" as *;
 
+
 .container {
     margin-inline: auto;
     width: 327px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $mq-stage-01) {
     
     .container {
         width: 500px;
@@ -14,7 +15,7 @@
 }
 
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: $mq-stage-02) {
 
     .container {
         width: 800px;
@@ -23,7 +24,7 @@
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $mq-stage-03) {
     
     .container {
         width: 960px;

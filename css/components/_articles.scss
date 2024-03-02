@@ -1,16 +1,20 @@
 @use "../abstract/" as *;
 
 .articles__box {
-    margin-block-start: 1.875em;
-    gap: 1.375em 0;
-    display: grid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.375em;
     grid-template-columns: 1fr;
+    justify-content: center;
+    margin-block-start: 1.875em;
+    margin-inline: auto;
 }
 
 .articles__item {
+    background-color: $clr-white;
     border-radius: 6px;
     overflow: hidden;
-    background-color: $clr-white;
 }
 
 .article__image-box {
@@ -18,19 +22,19 @@
 }
 
 .article__image {
-    object-fit: fill;
     clip-path: polygon(0px 0px, 100% 0px, 100% 200px, 0px 200px);
+    object-fit: fill;
 }
 
 .article__content-box {
-    padding-block-start: 1.5em;
-    padding-block-end: 2.25em;
-    padding-inline-start: 1.75em;
-    padding-inline-end: 1.25em;
+    align-items: start;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    padding-block-end: 2.25em;
+    padding-block-start: 1.5em;
+    padding-inline-end: 1.25em;
+    padding-inline-start: 1.75em;
 }
 
 .article__author {
@@ -40,8 +44,8 @@
 
 .article__title {
     font-size: $fs-400;
-    text-align: left;
     margin-block-start: .75em;
+    text-align: left;
 }
 
 .article__link {
@@ -55,29 +59,42 @@
 
 .article__text {
     font-size: $fs-250;
-    text-align: left;
     line-height: 1.5;
     margin-block-start: .5em;
+    text-align: left;
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $mq-stage-01) {
 
     .articles__box {
         display: grid;
-        grid-template-columns: 500px;
         gap: 3em;
+        grid-template-columns: 500px;
     }
     
 }
 
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: $mq-stage-02) {
+
+
 
     .articles__box {
         display: grid;
-        grid-template-columns: repeat(2, 372px);
         gap: 3em;
+        grid-template-columns: repeat(2, 372px);
+    }
+    
+}
+
+
+@media screen and (min-width: $mq-stage-03) {
+
+    .articles__box {
+        display: grid;
+        gap: 3em;
+        grid-template-columns: repeat(2, 372px);
     }
     
 }
@@ -86,9 +103,9 @@
 @media screen and (min-width: $mq-desktop) {
 
     .articles__box {
+        gap: 1.625em;
         grid-template-columns: repeat(4, 255px);
         grid-template-rows: 395px;
-        gap: 0 1.625em;
     }
 
     .article__image-box {
@@ -98,4 +115,15 @@
     .article__image {
         aspect-ratio: 4 / 3;
     }
+
+    .article__content-box {
+        padding-block-start: 1em;
+        padding-inline-end: 1.25em;
+        padding-inline-start: 1.5em;
+    }
+
+    .article__text {
+        font-size: $fs-200;
+    }
+
 }
