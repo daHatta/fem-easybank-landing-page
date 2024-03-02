@@ -1,9 +1,5 @@
 @use "../abstract/" as *;
 
-.primary-header {
-    z-index: 10;
-}
-
 .primary-header[data-overlay]::before {
     content: "";
     background: linear-gradient(to bottom, $clr-dark-blue, transparent);
@@ -26,6 +22,9 @@
     padding-block: 1.5em 1.5em;
     position: fixed;
     width: 327px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav__list {
@@ -67,7 +66,27 @@
 }
 
 
-@media screen and (min-width: $mq-desktop) {
+@media screen and (min-width: 960px) {
+    
+    .primary-navigation[data-visible] {
+        display: block;
+        margin-block-start: 0;
+        background: $clr-white;
+        border-radius: 4px;
+        margin-inline: auto;
+        padding-block: 1.5em 1.5em;
+        position: fixed;
+        width: 327px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
 
     .mobile__nav-toggle {
         display: none;

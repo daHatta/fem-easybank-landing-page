@@ -1,12 +1,6 @@
 @use "../abstract/" as *;
 
 body {
-    background-image: 
-    url("../../images/bg-intro-mobile.svg");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position: top 8px center;
-    background-size: auto;
     font-size: $fs-500;
     background-color: $clr-very-light-gray;
 }
@@ -20,6 +14,11 @@ footer {
     background-color: $clr-dark-blue;
     padding-block-start: 2.25em;
     padding-block-end: 2em;
+}
+
+main {
+    position: relative;
+    z-index: 1;
 }
 
 section {
@@ -44,12 +43,3 @@ a {
     text-decoration: none;
 }
 
-@media screen and (min-width: $mq-desktop) {
-
-    body {
-        background-image: 
-        url("../../images/bg-intro-desktop.svg");
-        background-position: top -200px right -440px;
-        background-size: auto;
-    }
-}

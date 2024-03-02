@@ -1,0 +1,56 @@
+@use "../abstract/" as *;
+
+.hero-bg {
+    background-image: url("../../images/bg-intro-mobile.svg");
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: top -50px center;
+    background-size: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-bg {
+        background-image: url("../../images/bg-intro-mobile.svg");
+        background-size: 100%;
+        background-position: top right;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .hero-bg {
+        background-image: url("../../images/bg-intro-mobile.svg");
+        background-size: 100%;
+        background-position: top -250px right;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero-bg {
+        background-image: url("../../images/bg-intro-desktop.svg");
+        background-position: top -200px right -340px;
+    }
+
+}
+
+
+@media screen and (min-width: $mq-desktop) {
+
+    .content-box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    
+    .hero-bg {
+        background-image: url("../../images/bg-intro-desktop.svg");
+        background-position: 43.4vw -260px;
+    }
+
+}

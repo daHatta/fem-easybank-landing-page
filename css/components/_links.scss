@@ -30,7 +30,7 @@
     display: none;
 }
 
-.hero .request__link {
+.hero .request__link-box {
     margin-block-start: 2.375em;
 }
 
@@ -39,15 +39,30 @@ footer .request__link:focus-visible {
     opacity: .6;
 }
 
-@media screen and (min-width: $mq-desktop) {
+@media screen and (min-width: 960px) {
+
+    .hero .request__link-box {
+        margin-inline: 0;
+        margin-right: auto;
+    }
+    
+
+}
+
+@media screen and (min-width: 1280px) {
     
     .header__box .request__link {
         display: block;
         margin-block-start: 1.125em;
         margin-block-end: 1.125em;
     }
-    
-    .request__link-box {
+
+    .hero__content .request__link-box {
+        margin-inline: 0;
+        margin-right: auto;
+    }
+
+    .footer__area .request__link-box {
         margin-inline: 0;
         margin-left: auto;
     }

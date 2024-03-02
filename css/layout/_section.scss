@@ -22,12 +22,24 @@
     line-height: 1.6;
 }
 
+@media screen and (min-width: 1280px) {
+    
+    .section:nth-child(1) {
+        margin-block-start: 0;
+    }
+
+}
+
 
 @media screen and (min-width: $mq-desktop) {
 
     .section__title,
     .section__intro {
         text-align: left;
+    }
+
+    .section:nth-child(1) .section__intro {
+        width: 540px;
     }
 
 }
