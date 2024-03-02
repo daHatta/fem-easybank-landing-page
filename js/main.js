@@ -3,7 +3,7 @@
 
 const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile__nav-toggle");
-const primaryNav = document.querySelector(".primary-navigation");
+const primaryNav = document.getElementById("primary-navigation");
 
 navToggle.addEventListener("click", () => {
     
