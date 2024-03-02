@@ -210,11 +210,11 @@ a {
   z-index: 9;
 }
 
-#primary-navigation {
+#header-primary-navigation {
   display: none;
 }
 
-#primary-navigation[data-visible] {
+#header-primary-navigation[data-visible] {
   background: hsl(0, 0%, 100%);
   border-radius: 4px;
   display: block;
@@ -267,7 +267,7 @@ a {
 }
 
 @media screen and (min-width: 960px) {
-  #primary-navigation[data-visible] {
+  #header-primary-navigation[data-visible] {
     background: hsl(0, 0%, 100%);
     border-radius: 4px;
     display: block;
@@ -285,7 +285,7 @@ a {
   .mobile__nav-toggle {
     display: none;
   }
-  #primary-navigation {
+  #header-primary-navigation {
     display: flex;
     justify-content: center;
   }
