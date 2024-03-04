@@ -12,7 +12,8 @@
     flex-direction: row;
     justify-content: space-between;
     justify-items: start;
-    padding: 1.063em 0 1em;
+    padding-block-end: 1em;
+    padding-block-start: 1.063em;
     position: relative;
     width: 100%;
     z-index: 11;
@@ -28,7 +29,8 @@
 @media screen and (min-width: 1280px) {
     
     .header__box {
-        padding: 0;
+        padding-block-end: 0;
+        padding-block-start: 0;
     }
 
 }

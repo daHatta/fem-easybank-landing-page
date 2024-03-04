@@ -39,9 +39,8 @@
 @media screen and (min-width: $mq-stage-02) {
 
     .pro-arg__box {
-        display: grid;
-        gap: 3em;
         grid-template-columns: repeat(2, 372px);
+        margin-block-start: 4.125em;
     }
     
 }
@@ -54,7 +53,6 @@
     }
 
     .pro-arg__box {
-        display: grid;
         gap: 0 1.625em;
         grid-template-columns: repeat(4, 255px);
     }
@@ -63,13 +61,22 @@
         margin-inline: 0 auto;
     }
 
+    .pro-arg__content-box {
+        padding-block-start: 2.25em;
+    }
+
     .pro-arg__title {
-        margin-block-start: 1em;
+        font-size: $fs-700;
     }
 
     .pro-arg__title,
     .pro-arg__text {
         text-align: left;
+    }
+
+    .pro-arg__text {
+        font-size: $fs-400;
+        margin-block-start: 1.625em;
     }
 
 }

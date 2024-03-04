@@ -78,22 +78,7 @@
 
 @media screen and (min-width: $mq-stage-02) {
 
-
-
     .articles__box {
-        display: grid;
-        gap: 3em;
-        grid-template-columns: repeat(2, 372px);
-    }
-    
-}
-
-
-@media screen and (min-width: $mq-stage-03) {
-
-    .articles__box {
-        display: grid;
-        gap: 3em;
         grid-template-columns: repeat(2, 372px);
     }
     
@@ -106,24 +91,29 @@
         gap: 1.625em;
         grid-template-columns: repeat(4, 255px);
         grid-template-rows: 395px;
+        margin-block-start: 3em;
     }
 
     .article__image-box {
         width: 255px;
+        height: 200px;
     }
 
     .article__image {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 255 / 200;
+        object-fit: fill;
     }
 
     .article__content-box {
-        padding-block-start: 1em;
+        padding-block-end: 1.25em;
+        padding-block-start: 1.5em;
         padding-inline-end: 1.25em;
         padding-inline-start: 1.5em;
     }
 
     .article__text {
         font-size: $fs-200;
+        margin-block-start: .875em;
     }
 
 }
