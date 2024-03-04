@@ -365,6 +365,7 @@ a {
     justify-content: center;
     overflow-x: hidden;
     width: 100%;
+    margin-inline: auto;
   }
   .hero-bg {
     background-image: url("../images/bg-intro-desktop.svg");
@@ -704,7 +705,7 @@ footer .request__link:focus-visible {
   }
   .hero__image-box {
     height: 100%;
-    width: 55.6%;
+    width: 54.6%;
   }
   .hero__image {
     height: 899px;
@@ -717,12 +718,12 @@ footer .request__link:focus-visible {
     max-width: 1440px;
     padding-block-start: 4em;
     padding-left: 11.3rem;
-    width: 44.4%;
+    width: 45.4%;
     text-align: left;
   }
   .hero__title {
     font-size: 3.5rem;
-    width: 415px;
+    width: 450px;
   }
   .hero__text {
     font-size: 1.125rem;
